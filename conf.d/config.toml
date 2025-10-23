@@ -1,0 +1,36 @@
+serverAddr = "https://arcade.devops.mn"
+apiKey = "your_api_key_here"
+agentId = "your_agent_id_here"
+
+[agent]
+# heartbeat interval in seconds
+interval = 60
+# labels for the agent
+labels = { "env" = "production", "region" = "us-west" }
+
+[log]
+# support stdout, file, kafka
+output = "stdout"
+# log level: DEBUG INFO WARNING ERROR FATAL
+level = "DEBUG"
+# log write directory
+path = "logs"
+# rotate by time
+keepHours = 4
+# rotate by size
+rotateNum = 3
+# unit: MB
+rotateSize = 256
+
+[http]
+host = "0.0.0.0"
+port = 8080
+# debug, release
+mode = "debug"
+# enable pprof, false or true
+pprof = true
+# enable metrics, false or true
+exposeMetrics = true
+# access log, false or true
+accessLog = true
+# read timeout
