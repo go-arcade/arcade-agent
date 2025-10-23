@@ -1,4 +1,0 @@
-[submodule "arcade-upstream"]
-	path = arcade-upstream
-	url = https://github.com/observabil/arcade.git
-	branch = main
